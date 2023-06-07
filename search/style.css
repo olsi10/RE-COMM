@@ -30,7 +30,7 @@ input {
 
 input::placeholder {
     color: rgba(164, 164, 164, 1);
-    font-size: 15px;
+    font-size: 24px;
 }
 
 input:focus {
@@ -39,7 +39,7 @@ input:focus {
 
 .input {
     display: flex;
-    width: 700px;
+    width: 883px;
     height: 90px;
     align-items: center;
     display: flex;
@@ -59,14 +59,14 @@ input:focus {
     background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
     background-repeat: no-repeat;
     font-size: 24px;
-    color: rgba(119, 119, 119, 1);
+    color: #A4A4A4;
     font-weight: 500;
 }
 
 .input .img {
-    width: 25px;
-    height: 23px;
-    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    margin-right: -40px;
     align-items: center;
 }
 
@@ -104,7 +104,7 @@ input:focus {
     width: 100%;
     height: 90px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1012px 273px 275px;
     gap: 30px;
     margin: 20px 0;
 }
@@ -133,26 +133,16 @@ input:focus {
     5px 5px,
     1.5em 1.5em;
     background-repeat: no-repeat;
-    font-size: 16px;
-    color: rgba(119, 119, 119, 1);
+    font-size: 24px;
+    color: #A4A4A4;
     font-weight: 700;
-}
-
-option {
-    clip: 'rect(0 0 0 0)';
-    clipPath: 'inset(50%)';
-    height: '1px';
-    overflow: 'hidden';
-    position: 'absolute';
-    whiteSpace: 'nowrap';
-    width: '1px';
 }
 
 /* 검색 결과 */
 .container {
     width: 1620px;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto 200px auto;
 }
 
 .container .title {
@@ -166,10 +156,49 @@ option {
     display: flex;
     position: relative;
     justify-content: space-between;
-    /* margin: 20px 170px; */
-    gap: 30px;
+    padding: 0px 0px 110px 0px;
+    row-gap: 175px;
     overflow: hidden;
     flex-wrap: wrap;
+}
+
+.books-container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 50px 0px 150px 0;;
+    gap: 30px;
+    /* overflow: hidden; */
+    transition: all ease 1s;
+}
+
+.grid-books-items {
+    width: 300px;
+    height: 395px;
+}
+
+.grid-books .books {
+    height: 395px;
+}
+
+.grid-books .books-img {
+    height: 100%;
+
+}
+.grid-books .books-title {
+    height: 150px;
+}
+
+.books-title .title {
+    width: 220px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    margin: 15px 0px 0px 0px;
+    /* 텍스트 길 때 말줄임표 */
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .books-container {
